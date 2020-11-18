@@ -16,7 +16,7 @@ class Users extends Migration
         //
         Schema::create('users', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('name');
+            // $table->string('name');
             $table->string('email');
             $table->string('password');
             $table->timestamp('last_logged_in')->nullable();
