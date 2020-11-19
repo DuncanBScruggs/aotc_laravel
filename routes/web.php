@@ -19,3 +19,7 @@ $router->get('/', function () use ($router) {
 
 $router->post('/register','UsersController@register');
 
+$router->group(['middleware' => 'auth'], function () use ($router){
+    
+});
+
